@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta charset="utf-8"/>
+    <title>安徽省现代农业产业技术体系平台</title>
+
+    <meta name="description" content="User login page"/>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css"/>
+    <style type="text/css">
+        .container{
+            width:300px;
+            float:right;
+            padding-top:18%;
+            margin-right: 10%;
+        }
+        .row{
+            border:1px solid #ccc;
+            background-color : #fff;
+            padding-left : 18%;
+            padding-right : 18%;
+        }
+        .header.blue{
+            border-bottom-color : #d5e3ef;
+        }
+        h4.bigger{
+            font-size : 19px;
+        }
+        .header{
+            line-height : 28px;
+            margin-bottom : 16px;
+            margin-top : 18px;
+            padding-bottom : 4px;
+            border-bottom : 1px solid #ccc;
+        }
+        .blue{
+            color : #478fca !important;
+        }
+
+        h4{
+            font-family : "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        }
+        .fa{
+            display: inline-block;
+            top: 27px;
+            left: 6px;
+            position: relative;
+            color: #ccc;
+        }
+        input[type="text"],input[type="password"]{
+
+            outline: none;
+
+        }
+        /*.fa-user::before{
+            content : url("images/user.png");
+        */
+
+
+    </style>
+
+
+</head>
+
+<body>
+
+<div style="position:absolute; width:100%; height:100%; z-index:-1; left:0; top:0;">
+    <img src="images/log_background.png" height="100%" width="100%"
+         style="position:absolute;left:0; top:0;">
+</div>
+
+<div class="container">
+    <div class="form row">
+        <h4 class="header blue lighter bigger">
+            <i class="ace-icon fa fa-coffee green"></i> 用户登录信息
+        </h4>
+        <div class="block clearfix">
+                                <span class="block input-icon input-icon-right">
+                                    <input class="form-control" placeholder="姓名或用户名" id="userName" type="text">
+										<i class="ace-icon fa fa-user">
+                                            <img src="images/user.png" style="width:20px;margin-left:170px;margin-top:-111px;">
+                                        </i>
+                                </span>
+        </div>
+        <div class="space-6"></div>
+        <div class="block clearfix">
+													<span class="block input-icon input-icon-right">
+														<input class="form-control" placeholder="密码" id="password" type="password">
+														<i class="ace-icon fa fa-lock">
+                                                             <img src="images/unlocking.png" style="width:20px;margin-left:170px;margin-top:-111px;">
+                                                        </i>
+												</span>
+        </div>
+        <div class=" clearfix" style="margin-bottom : 20px;">
+
+            <button type="button" class="width-35 pull-right btn btn-sm btn-primary" id="login">
+                <i class="ace-icon fa fa-key"></i>
+                <span class="bigger-110">登录</span>
+            </button>
+        </div>
+    </div>
+</div>
+
+
+
+
+    <script src="assets/js/bootstrap.min.js"></script>
+
+</body>
+</html>
