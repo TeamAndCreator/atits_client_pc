@@ -61,118 +61,51 @@
                             <div class="col-xs-12">
 
                                 <br/>
-                                <div class="action-buttons">
 
-                                    <a class="btn btn-sm btn-primary" href="station_add"> <i
-                                            class="ace-icon fa  bigger-130">+添加</i>
-                                    </a>
-                                    <a class="btn btn-sm btn-danger" href="#">
-                                        <i class="ace-icon fa  bigger-130">×删除</i>
-                                    </a>
-
-                                </div>
 
                                 <div>
+                                    <button type="button" class="btn btn-primary btn-xs state"
+                                            id="${dynamic.id}">+添&nbsp;&nbsp;&nbsp;&nbsp;加
+                                    </button>
                                     <table id="sample-table-2"
                                            class="table table-striped table-bordered table-hover"
                                            width="100%">
                                         <thead>
                                         <tr>
+                                            <th class="text-center col-sm-2">考评年度</th>
+                                            <th class="text-center col-sm-2">考评人员</th>
+                                            <th class="text-center col-sm-2">考评日期</th>
+                                            <th class="text-center col-sm-2">考评地点</th>
+                                            <th class="text-center col-sm-2">状态</th>
 
-                                            <th class="center col-sm-1"><label class="position-relative">
-                                                <input type="checkbox" class="ace"/> <span class="lbl"></span>
-                                            </label></th>
-
-                                            <th class="text-center col-sm-3">综合试验站名称</th>
-                                            <th class="text-center col-sm-2">综合试验站站长</th>
-                                            <th class="text-center col-sm-2">所属体系</th>
-                                            <th class="hidden-480 text-center col-sm-3">建设依托单位</th>
-
-                                            <th class="hidden-480 text-center col-sm-1" >状态</th>
 
                                         </tr>
                                         </thead>
                                         <tbody>
-
                                         <tr>
-                                            <td class="center">
-                                                <label class="position-relative">
-                                                    <input type="checkbox" class="ace" name="subcheck" value=""/>
-                                                    <span class="lbl"></span>
-                                                </label>
-                                            </td>
-                                            <td>
-                                                <a href="" role="button" class="blue" data-toggle="modal">
-                                                </a>
-                                            </td>
-                                            <td class="hidden-480"></td>
-                                            <td></td>
-                                            <td></td>
 
-                                            <td class="hidden-480">
-                                                <button type="button"
-                                                        class="btn btn-primary btn-xs state"
-                                                        id="${station.id}">审&nbsp;&nbsp;&nbsp;&nbsp;核
+                                            <td class="text-center">2018
+                                            </td>
+                                            <td class="text-center">
+                                                赵刘
+                                            </td>
+                                            <td class="text-center">2018-03-11</td>
+                                            <td class="text-center">安徽农业大学</td>
+                                            <td class="text-center">
+                                                <button type="button" class="btn btn-primary btn-xs state" id="${dynamic.id}">考&nbsp;&nbsp;&nbsp;&nbsp;评
                                                 </button>
                                             </td>
 
-                                            <td class="hidden-480">
-                                                <button
-                                                        class="btn btn-success btn-xs disabled">通&nbsp;&nbsp;&nbsp;&nbsp;过
-                                                </button>
-                                            </td>
-
-                                            <td class="hidden-480">
-                                                <button
-                                                        class="btn btn-danger btn-xs disabled">未通过
-                                                </button>
-                                            </td>
-
-                                        <tr>
-                                            <td><a href="station_detail?id=${station.id}" role="button"
-                                                   class="blue"
-                                                   data-toggle="modal"></a>
-                                            </td>
-                                            <td class="hidden-480"></td>
-                                            <td></td>
-                                            <td></td>
                                         </tr>
+
+
 
                                         </tbody>
                                     </table>
 
-                                    <div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog"
-                                         aria-labelledby="mySmallModalLabel" id="mySmallModalLabel"
-                                         style="position: absolute;top: 50%;left: 50%;transform: translateX(-50%) translateY(-50%);">
-                                        <div class="modal-dialog modal-sm" role="document">
-                                            <div class="modal-content">
-                                                <div class="modal-header">
-                                                    <button type="button" class="close" data-dismiss="modal"
-                                                            aria-label="Close"><span aria-hidden="true">&times;</span>
-                                                    </button>
-                                                    <h4 class="modal-title" id="gridSystemModalLabel">审核</h4>
-                                                </div>
-                                                <div class="modal-body">
 
-                                                    <input name="shenhe" type="radio" value="1"/>通过&nbsp;&nbsp;&nbsp;&nbsp;
-                                                    <input name="shenhe" type="radio" value="2"/>不通过
-                                                    <input type="hidden" id="state_id"/>
-                                                </div>
 
-                                                <div class="modal-footer">
-                                                    <button type="button" class="btn btn-sm btn-default"
-                                                            data-dismiss="modal">取消
-                                                    </button>
-                                                    <button type="button" class="submit btn btn-sm btn-primary">提交
-                                                    </button>
-                                                </div>
 
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <form action="" method="POST">
-                                        <input type="hidden" name="_method" value="DELETE"/>
-                                    </form>
                                 </div>
 
                             </div>
@@ -184,6 +117,7 @@
         </div>
     </div>
 </div>
+
 <script type="text/javascript">
     window.jQuery
     || document.write("<script src='assets/js/jquery.min.js'>"
